@@ -4,6 +4,7 @@ const express = require("express");
 const PORT = process.env.PORT || 5000;
 const app = express();
 require("./DataBase/dbConfig");
+require("./DataBase/connection");
 
 // middleware
 

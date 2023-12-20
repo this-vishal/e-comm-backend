@@ -1,12 +1,15 @@
 const { Sequelize } = require("sequelize");
+
 const dbName = process.env.DATABASE_NAME;
 const dbUser = process.env.DATABASE_USERNAME;
 const dbPassword = process.env.DATABASE_PASSWORD;
+
 
 const sequelize = new Sequelize(dbName, dbUser, dbPassword, {
   host: "localhost",
   dialect: "postgres",
 });
+
 
 // testConnection.js
 async function testConnection() {
@@ -20,9 +23,6 @@ async function testConnection() {
       "Unable to connect to the PostgreSQL database:",
       error.message
     );
-  } finally {
-    // Close the Sequelize connection (optional)
-    await sequelize.close();
   }
 }
 
