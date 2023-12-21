@@ -3,7 +3,7 @@ const sequelize = require('../DataBase/dbConfig');
 
 
 
-const CustomerAddress = sequelize.define('CustomerAddress', {
+const CustomerAddress = sequelize.define('Address', {
 
     city: {
         type: DataTypes.STRING,

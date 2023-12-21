@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../DataBase/dbConfig')
+const sequelize = require('../DataBase/dbConfig');
+
 
 const Account = sequelize.define('account', {
     account_no: {
